@@ -93,9 +93,11 @@
             // 
             this.tcMaskedTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.tcMaskedTextBox.Location = new System.Drawing.Point(147, 91);
+            this.tcMaskedTextBox.Mask = "00000000000";
             this.tcMaskedTextBox.Name = "tcMaskedTextBox";
             this.tcMaskedTextBox.Size = new System.Drawing.Size(143, 30);
             this.tcMaskedTextBox.TabIndex = 6;
+            this.tcMaskedTextBox.ValidatingType = typeof(int);
             // 
             // üyeOlLinkLabel
             // 
@@ -112,7 +114,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(360, 357);
+            this.ClientSize = new System.Drawing.Size(360, 343);
             this.Controls.Add(this.üyeOlLinkLabel);
             this.Controls.Add(this.tcMaskedTextBox);
             this.Controls.Add(this.button1);

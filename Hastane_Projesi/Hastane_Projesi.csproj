@@ -46,11 +46,53 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormBransPaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBransPaneli.Designer.cs">
+      <DependentUpon>FormBransPaneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDoktorPaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDoktorPaneli.Designer.cs">
+      <DependentUpon>FormDoktorPaneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDoktorBilgiDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDoktorBilgiDuzenle.Designer.cs">
+      <DependentUpon>FormDoktorBilgiDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDoktorDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDoktorDetay.Designer.cs">
+      <DependentUpon>FormDoktorDetay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDoktorGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDoktorGiris.Designer.cs">
+      <DependentUpon>FormDoktorGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDuyurular.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDuyurular.Designer.cs">
+      <DependentUpon>FormDuyurular.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormGiris.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormGiris.Designer.cs">
       <DependentUpon>FormGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHastaBilgiDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHastaBilgiDuzenle.Designer.cs">
+      <DependentUpon>FormHastaBilgiDuzenle.cs</DependentUpon>
     </Compile>
     <Compile Include="FormHastaDetay.cs">
       <SubType>Form</SubType>
@@ -70,10 +112,49 @@
     <Compile Include="FormHastaKayit.Designer.cs">
       <DependentUpon>FormHastaKayit.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormRandevuListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRandevuListesi.Designer.cs">
+      <DependentUpon>FormRandevuListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSekreterDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSekreterDetay.Designer.cs">
+      <DependentUpon>FormSekreterDetay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSekreterGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSekreterGiris.Designer.cs">
+      <DependentUpon>FormSekreterGiris.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormBransPaneli.resx">
+      <DependentUpon>FormBransPaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDoktorPaneli.resx">
+      <DependentUpon>FormDoktorPaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDoktorBilgiDuzenle.resx">
+      <DependentUpon>FormDoktorBilgiDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDoktorDetay.resx">
+      <DependentUpon>FormDoktorDetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDoktorGiris.resx">
+      <DependentUpon>FormDoktorGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDuyurular.resx">
+      <DependentUpon>FormDuyurular.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormGiris.resx">
       <DependentUpon>FormGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHastaBilgiDuzenle.resx">
+      <DependentUpon>FormHastaBilgiDuzenle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormHastaDetay.resx">
       <DependentUpon>FormHastaDetay.cs</DependentUpon>
@@ -83,6 +164,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormHastaKayit.resx">
       <DependentUpon>FormHastaKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRandevuListesi.resx">
+      <DependentUpon>FormRandevuListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSekreterDetay.resx">
+      <DependentUpon>FormSekreterDetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSekreterGiris.resx">
+      <DependentUpon>FormSekreterGiris.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
