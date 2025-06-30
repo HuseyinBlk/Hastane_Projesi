@@ -46,14 +46,44 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="FormGiris.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FormGiris.Designer.cs">
+      <DependentUpon>FormGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHastaDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHastaDetay.Designer.cs">
+      <DependentUpon>FormHastaDetay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHastaGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHastaGiris.Designer.cs">
+      <DependentUpon>FormHastaGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHastaKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHastaKayit.Designer.cs">
+      <DependentUpon>FormHastaKayit.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormGiris.resx">
+      <DependentUpon>FormGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHastaDetay.resx">
+      <DependentUpon>FormHastaDetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHastaGiris.resx">
+      <DependentUpon>FormHastaGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHastaKayit.resx">
+      <DependentUpon>FormHastaKayit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
