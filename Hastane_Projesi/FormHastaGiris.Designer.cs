@@ -88,6 +88,7 @@
             this.button1.TabIndex = 5;
             this.button1.Text = " Devam Et";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // tcMaskedTextBox
             // 
@@ -109,9 +110,11 @@
             this.üyeOlLinkLabel.TabIndex = 7;
             this.üyeOlLinkLabel.TabStop = true;
             this.üyeOlLinkLabel.Text = "Üye Ol";
+            this.üyeOlLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.üyeOlLinkLabel_LinkClicked);
             // 
             // FormHastaGiris
             // 
+            this.AcceptButton = this.button1;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(360, 343);

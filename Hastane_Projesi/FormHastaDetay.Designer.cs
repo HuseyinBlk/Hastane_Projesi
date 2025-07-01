@@ -29,31 +29,34 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.tcLabel = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.soyisimLabel = new System.Windows.Forms.Label();
+            this.isimLabel = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.isimLabel = new System.Windows.Forms.Label();
-            this.soyisimLabel = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tcLabel = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.button2 = new System.Windows.Forms.Button();
+            this.idTextBox = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -75,27 +78,37 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Kişi Bilgi";
             // 
-            // label1
+            // button2
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(22, 34);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(57, 27);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "TC No:";
+            this.button2.ForeColor = System.Drawing.Color.Black;
+            this.button2.Location = new System.Drawing.Point(59, 127);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(106, 23);
+            this.button2.TabIndex = 10;
+            this.button2.Text = "Bilgileri Düzenle";
+            this.button2.UseVisualStyleBackColor = true;
             // 
-            // tcLabel
+            // soyisimLabel
             // 
-            this.tcLabel.AutoSize = true;
-            this.tcLabel.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tcLabel.ForeColor = System.Drawing.Color.White;
-            this.tcLabel.Location = new System.Drawing.Point(77, 34);
-            this.tcLabel.Name = "tcLabel";
-            this.tcLabel.Size = new System.Drawing.Size(111, 27);
-            this.tcLabel.TabIndex = 2;
-            this.tcLabel.Text = "00000000000";
+            this.soyisimLabel.AutoSize = true;
+            this.soyisimLabel.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.soyisimLabel.ForeColor = System.Drawing.Color.White;
+            this.soyisimLabel.Location = new System.Drawing.Point(77, 97);
+            this.soyisimLabel.Name = "soyisimLabel";
+            this.soyisimLabel.Size = new System.Drawing.Size(67, 27);
+            this.soyisimLabel.TabIndex = 4;
+            this.soyisimLabel.Text = "Soyİsim";
+            // 
+            // isimLabel
+            // 
+            this.isimLabel.AutoSize = true;
+            this.isimLabel.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.isimLabel.ForeColor = System.Drawing.Color.White;
+            this.isimLabel.Location = new System.Drawing.Point(54, 64);
+            this.isimLabel.Name = "isimLabel";
+            this.isimLabel.Size = new System.Drawing.Size(41, 27);
+            this.isimLabel.TabIndex = 3;
+            this.isimLabel.Text = "İsim";
             // 
             // label3
             // 
@@ -120,31 +133,34 @@
             this.label4.Text = "Soyad:";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
-            // isimLabel
+            // label1
             // 
-            this.isimLabel.AutoSize = true;
-            this.isimLabel.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.isimLabel.ForeColor = System.Drawing.Color.White;
-            this.isimLabel.Location = new System.Drawing.Point(54, 64);
-            this.isimLabel.Name = "isimLabel";
-            this.isimLabel.Size = new System.Drawing.Size(41, 27);
-            this.isimLabel.TabIndex = 3;
-            this.isimLabel.Text = "İsim";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(22, 34);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(57, 27);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "TC No:";
             // 
-            // soyisimLabel
+            // tcLabel
             // 
-            this.soyisimLabel.AutoSize = true;
-            this.soyisimLabel.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.soyisimLabel.ForeColor = System.Drawing.Color.White;
-            this.soyisimLabel.Location = new System.Drawing.Point(77, 97);
-            this.soyisimLabel.Name = "soyisimLabel";
-            this.soyisimLabel.Size = new System.Drawing.Size(67, 27);
-            this.soyisimLabel.TabIndex = 4;
-            this.soyisimLabel.Text = "Soyİsim";
+            this.tcLabel.AutoSize = true;
+            this.tcLabel.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tcLabel.ForeColor = System.Drawing.Color.White;
+            this.tcLabel.Location = new System.Drawing.Point(77, 34);
+            this.tcLabel.Name = "tcLabel";
+            this.tcLabel.Size = new System.Drawing.Size(111, 27);
+            this.tcLabel.TabIndex = 2;
+            this.tcLabel.Text = "00000000000";
             // 
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.DarkRed;
+            this.groupBox2.Controls.Add(this.linkLabel1);
+            this.groupBox2.Controls.Add(this.label7);
+            this.groupBox2.Controls.Add(this.idTextBox);
             this.groupBox2.Controls.Add(this.button1);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.label5);
@@ -161,25 +177,41 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Randevu Paneli";
             // 
-            // comboBox1
+            // button1
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(87, 33);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 26);
-            this.comboBox1.TabIndex = 0;
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.Location = new System.Drawing.Point(102, 252);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(81, 25);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "Randevu Al";
+            this.button1.UseVisualStyleBackColor = true;
             // 
-            // comboBox2
+            // label6
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(87, 70);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 26);
-            this.comboBox2.TabIndex = 1;
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Dubai", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(29, 138);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(47, 18);
+            this.label6.TabIndex = 8;
+            this.label6.Text = "Şikayet:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Dubai", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(33, 98);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(43, 18);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "Doktor:";
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(87, 110);
+            this.richTextBox1.Location = new System.Drawing.Point(82, 130);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(121, 114);
             this.richTextBox1.TabIndex = 2;
@@ -190,43 +222,29 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Dubai", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(32, 36);
+            this.label2.Location = new System.Drawing.Point(37, 63);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(39, 18);
             this.label2.TabIndex = 6;
             this.label2.Text = "Branş:";
             // 
-            // label5
+            // comboBox2
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Dubai", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(32, 73);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(43, 18);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "Doktor:";
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(82, 95);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(121, 26);
+            this.comboBox2.TabIndex = 1;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
-            // label6
+            // comboBox1
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Dubai", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(32, 113);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(47, 18);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "Şikayet:";
-            // 
-            // button1
-            // 
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(107, 230);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(81, 25);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Randevu Al";
-            this.button1.UseVisualStyleBackColor = true;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(82, 60);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 26);
+            this.comboBox1.TabIndex = 0;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // groupBox3
             // 
@@ -240,6 +258,15 @@
             this.groupBox3.TabIndex = 6;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Randevu Geçmişi";
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView2.Location = new System.Drawing.Point(3, 22);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(531, 194);
+            this.dataGridView2.TabIndex = 0;
             // 
             // groupBox4
             // 
@@ -263,24 +290,32 @@
             this.dataGridView1.Size = new System.Drawing.Size(531, 207);
             this.dataGridView1.TabIndex = 0;
             // 
-            // dataGridView2
+            // idTextBox
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView2.Location = new System.Drawing.Point(3, 22);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(531, 194);
-            this.dataGridView2.TabIndex = 0;
+            this.idTextBox.Location = new System.Drawing.Point(82, 25);
+            this.idTextBox.Name = "idTextBox";
+            this.idTextBox.Size = new System.Drawing.Size(121, 26);
+            this.idTextBox.TabIndex = 10;
             // 
-            // button2
+            // label7
             // 
-            this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(59, 127);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(106, 23);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "Bilgileri Düzenle";
-            this.button2.UseVisualStyleBackColor = true;
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(57, 28);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(19, 18);
+            this.label7.TabIndex = 11;
+            this.label7.Text = "id:";
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(34, 255);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(45, 18);
+            this.linkLabel1.TabIndex = 12;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Düzenle";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // FormHastaDetay
             // 
@@ -295,14 +330,15 @@
             this.ForeColor = System.Drawing.Color.White;
             this.Name = "FormHastaDetay";
             this.Text = "Hasta Detay";
+            this.Load += new System.EventHandler(this.FormHastaDetay_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.groupBox4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -329,5 +365,8 @@
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox idTextBox;
     }
 }

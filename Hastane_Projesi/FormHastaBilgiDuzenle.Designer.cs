@@ -63,7 +63,7 @@
             this.genderComboBox.Location = new System.Drawing.Point(134, 290);
             this.genderComboBox.Name = "genderComboBox";
             this.genderComboBox.Size = new System.Drawing.Size(130, 33);
-            this.genderComboBox.TabIndex = 27;
+            this.genderComboBox.TabIndex = 6;
             // 
             // button1
             // 
@@ -73,9 +73,10 @@
             this.button1.Location = new System.Drawing.Point(107, 340);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(130, 37);
-            this.button1.TabIndex = 26;
+            this.button1.TabIndex = 7;
             this.button1.Text = "Kaydet";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label6
             // 
@@ -144,7 +145,7 @@
             this.phoneMaskedTextBox.Mask = "(999) 000-0000";
             this.phoneMaskedTextBox.Name = "phoneMaskedTextBox";
             this.phoneMaskedTextBox.Size = new System.Drawing.Size(130, 30);
-            this.phoneMaskedTextBox.TabIndex = 19;
+            this.phoneMaskedTextBox.TabIndex = 4;
             // 
             // tcMaskedTextBox
             // 
@@ -153,7 +154,7 @@
             this.tcMaskedTextBox.Mask = "00000000000";
             this.tcMaskedTextBox.Name = "tcMaskedTextBox";
             this.tcMaskedTextBox.Size = new System.Drawing.Size(130, 30);
-            this.tcMaskedTextBox.TabIndex = 18;
+            this.tcMaskedTextBox.TabIndex = 3;
             this.tcMaskedTextBox.ValidatingType = typeof(int);
             // 
             // passwordTextBox
@@ -163,7 +164,7 @@
             this.passwordTextBox.Name = "passwordTextBox";
             this.passwordTextBox.PasswordChar = '*';
             this.passwordTextBox.Size = new System.Drawing.Size(130, 30);
-            this.passwordTextBox.TabIndex = 17;
+            this.passwordTextBox.TabIndex = 5;
             // 
             // soyadTextBox
             // 
@@ -171,7 +172,7 @@
             this.soyadTextBox.Location = new System.Drawing.Point(134, 120);
             this.soyadTextBox.Name = "soyadTextBox";
             this.soyadTextBox.Size = new System.Drawing.Size(130, 30);
-            this.soyadTextBox.TabIndex = 16;
+            this.soyadTextBox.TabIndex = 2;
             // 
             // adTextBox
             // 
@@ -179,7 +180,7 @@
             this.adTextBox.Location = new System.Drawing.Point(134, 78);
             this.adTextBox.Name = "adTextBox";
             this.adTextBox.Size = new System.Drawing.Size(130, 30);
-            this.adTextBox.TabIndex = 15;
+            this.adTextBox.TabIndex = 1;
             // 
             // FormHastaBilgiDuzenle
             // 
@@ -202,6 +203,7 @@
             this.Controls.Add(this.adTextBox);
             this.Name = "FormHastaBilgiDuzenle";
             this.Text = "FormHastaBilgiDuzenle";
+            this.Load += new System.EventHandler(this.FormHastaBilgiDuzenle_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

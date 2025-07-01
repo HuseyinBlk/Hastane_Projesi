@@ -28,11 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormHastaKayit));
             this.adTextBox = new System.Windows.Forms.TextBox();
             this.soyadTextBox = new System.Windows.Forms.TextBox();
             this.passwordTextBox = new System.Windows.Forms.TextBox();
             this.tcMaskedTextBox = new System.Windows.Forms.MaskedTextBox();
-            this.phoneMaskedTextBox = new System.Windows.Forms.MaskedTextBox();
+            this.telefonMaskedTextBox = new System.Windows.Forms.MaskedTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -67,7 +68,7 @@
             this.passwordTextBox.Name = "passwordTextBox";
             this.passwordTextBox.PasswordChar = '*';
             this.passwordTextBox.Size = new System.Drawing.Size(130, 30);
-            this.passwordTextBox.TabIndex = 2;
+            this.passwordTextBox.TabIndex = 4;
             // 
             // tcMaskedTextBox
             // 
@@ -76,17 +77,17 @@
             this.tcMaskedTextBox.Mask = "00000000000";
             this.tcMaskedTextBox.Name = "tcMaskedTextBox";
             this.tcMaskedTextBox.Size = new System.Drawing.Size(130, 30);
-            this.tcMaskedTextBox.TabIndex = 4;
+            this.tcMaskedTextBox.TabIndex = 2;
             this.tcMaskedTextBox.ValidatingType = typeof(int);
             // 
-            // phoneMaskedTextBox
+            // telefonMaskedTextBox
             // 
-            this.phoneMaskedTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.phoneMaskedTextBox.Location = new System.Drawing.Point(126, 184);
-            this.phoneMaskedTextBox.Mask = "(999) 000-0000";
-            this.phoneMaskedTextBox.Name = "phoneMaskedTextBox";
-            this.phoneMaskedTextBox.Size = new System.Drawing.Size(130, 30);
-            this.phoneMaskedTextBox.TabIndex = 5;
+            this.telefonMaskedTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.telefonMaskedTextBox.Location = new System.Drawing.Point(126, 184);
+            this.telefonMaskedTextBox.Mask = "(999) 000-0000";
+            this.telefonMaskedTextBox.Name = "telefonMaskedTextBox";
+            this.telefonMaskedTextBox.Size = new System.Drawing.Size(130, 30);
+            this.telefonMaskedTextBox.TabIndex = 3;
             // 
             // label1
             // 
@@ -159,6 +160,7 @@
             this.button1.TabIndex = 12;
             this.button1.Text = "Kayıt Yap";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // genderComboBox
             // 
@@ -167,7 +169,8 @@
             this.genderComboBox.Location = new System.Drawing.Point(126, 270);
             this.genderComboBox.Name = "genderComboBox";
             this.genderComboBox.Size = new System.Drawing.Size(130, 33);
-            this.genderComboBox.TabIndex = 13;
+            this.genderComboBox.TabIndex = 5;
+            this.genderComboBox.SelectedIndexChanged += new System.EventHandler(this.genderComboBox_SelectedIndexChanged);
             // 
             // label7
             // 
@@ -183,6 +186,7 @@
             // 
             // FormHastaKayit
             // 
+            this.AcceptButton = this.button1;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
@@ -196,13 +200,15 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.phoneMaskedTextBox);
+            this.Controls.Add(this.telefonMaskedTextBox);
             this.Controls.Add(this.tcMaskedTextBox);
             this.Controls.Add(this.passwordTextBox);
             this.Controls.Add(this.soyadTextBox);
             this.Controls.Add(this.adTextBox);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormHastaKayit";
-            this.Text = "FormHastaKayit";
+            this.Text = "Hasta Kayit";
+            this.Load += new System.EventHandler(this.FormHastaKayit_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -214,7 +220,7 @@
         private System.Windows.Forms.TextBox soyadTextBox;
         private System.Windows.Forms.TextBox passwordTextBox;
         private System.Windows.Forms.MaskedTextBox tcMaskedTextBox;
-        private System.Windows.Forms.MaskedTextBox phoneMaskedTextBox;
+        private System.Windows.Forms.MaskedTextBox telefonMaskedTextBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;

@@ -10,7 +10,12 @@ namespace Hastane_Projesi
 {
     internal class SqlBaglanti
     {
-
+        public SqlConnection connection()
+        {
+            SqlConnection connect = new SqlConnection("Data Source=ADMINISTRATOR\\SQLEXPRESS;Initial Catalog=HastaneProje;Integrated Security=True;TrustServerCertificate=True");
+            connect.Open();
+            return connect;
+        }
        
 
     }

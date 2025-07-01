@@ -57,6 +57,7 @@
             this.doktorButton.TabIndex = 0;
             this.doktorButton.Text = "Doktor Bilgi Sistemi";
             this.doktorButton.UseVisualStyleBackColor = false;
+            this.doktorButton.Click += new System.EventHandler(this.doktorButton_Click);
             // 
             // sekreterButton
             // 
@@ -69,6 +70,7 @@
             this.sekreterButton.TabIndex = 1;
             this.sekreterButton.Text = "Sekreter Bilgi Sistemi";
             this.sekreterButton.UseVisualStyleBackColor = false;
+            this.sekreterButton.Click += new System.EventHandler(this.sekreterButton_Click);
             // 
             // hastaButton
             // 
@@ -82,6 +84,7 @@
             this.hastaButton.TabIndex = 2;
             this.hastaButton.Text = "Hasta Bilgi  Sistemi";
             this.hastaButton.UseVisualStyleBackColor = false;
+            this.hastaButton.Click += new System.EventHandler(this.hastaButton_Click);
             // 
             // label1
             // 
@@ -150,10 +153,11 @@
             this.pictureBox4.TabIndex = 9;
             this.pictureBox4.TabStop = false;
             // 
-            // Form1
+            // FormGiris
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(559, 292);
             this.Controls.Add(this.pictureBox4);
@@ -166,9 +170,9 @@
             this.Controls.Add(this.hastaButton);
             this.Controls.Add(this.sekreterButton);
             this.Controls.Add(this.doktorButton);
-            this.Name = "Form1";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "FormGiris";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
