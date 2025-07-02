@@ -127,6 +127,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FormHastaGiris";
             this.Text = "Hasta Girişi";
+            this.Load += new System.EventHandler(this.FormHastaGiris_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

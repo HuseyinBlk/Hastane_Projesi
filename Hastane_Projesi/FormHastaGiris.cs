@@ -8,7 +8,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
 
 namespace Hastane_Projesi
 {
@@ -19,6 +18,11 @@ namespace Hastane_Projesi
             InitializeComponent();
         }
         SqlBaglanti bgl = new SqlBaglanti();
+        private void FormHastaGiris_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void üyeOlLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             FormHastaKayit formHastaKayit = new FormHastaKayit();
@@ -36,7 +40,7 @@ namespace Hastane_Projesi
             if (reader.Read())
             {
                 FormHastaDetay hastaDetay = new FormHastaDetay();
-                hastaDetay.Tc = tcMaskedTextBox.Text; 
+                hastaDetay.Tc = tcMaskedTextBox.Text;
                 hastaDetay.Show();
                 this.Hide();
 
@@ -49,5 +53,7 @@ namespace Hastane_Projesi
             bgl.connection().Close();
 
         }
+
+        
     }
 }
