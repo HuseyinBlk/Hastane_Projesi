@@ -49,7 +49,7 @@ namespace Hastane_Projesi
 
             //Randevu Listesi
             DataTable dt2 = new DataTable();
-            SqlDataAdapter da2 = new SqlDataAdapter("Select * from Tbl_Randevular where RandevuDurum =1 and HastaTC=" + Tc, bgl.connection());
+            SqlDataAdapter da2 = new SqlDataAdapter("Select * from Tbl_Randevular where RandevuDurum =0 and HastaTC=" + Tc, bgl.connection());
             da2.Fill(dt2);
             dataGridView1.DataSource = dt2;
             bgl.connection().Close();
@@ -84,24 +84,35 @@ namespace Hastane_Projesi
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
             DataTable dt3 = new DataTable();
-            SqlDataAdapter da3 = new SqlDataAdapter("Select * from Tbl_Randevular where RandevuBrans = '"+ comboBox1.Text+"'", bgl.connection());
+            SqlDataAdapter da3 = new SqlDataAdapter("Select * from Tbl_Randevular where RandevuBrans = '"+ comboBox1.Text+"' and RandevuDoktor = '"+comboBox2.Text+"' and RandevuDurum = 0", bgl.connection());
             da3.Fill(dt3);
             dataGridView1.DataSource = dt3;
             bgl.connection().Close();
         }
 
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
             FormHastaBilgiDuzenle bilgiduzenle = new FormHastaBilgiDuzenle();
             bilgiduzenle.TCNo = tcLabel.Text;
             bilgiduzenle.Show();
-            
-
         }
 
-        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            int secilen = dataGridView1.SelectedCells[0].RowIndex;
+            idTextBox.Text = dataGridView1.Rows[secilen].Cells[0].Value.ToString();
 
+            ;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            SqlCommand randevuGuncelleKomut=new SqlCommand("Update Tbl_Randevular set HastaTc = @p1, HastaSikayet = @p2, RandevuDurum = 1 where Randevuid = @p3",bgl.connection());
+            randevuGuncelleKomut.Parameters.AddWithValue("@p1",tcLabel.Text);
+            randevuGuncelleKomut.Parameters.AddWithValue("@p2",richTextBox1.Text);
+            randevuGuncelleKomut.Parameters.AddWithValue("@p3", idTextBox.Text);
+
+            randevuGuncelleKomut.ExecuteNonQuery();
         }
     }
 }

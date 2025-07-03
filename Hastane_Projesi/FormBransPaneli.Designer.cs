@@ -41,11 +41,13 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(242, 12);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(323, 151);
             this.dataGridView1.TabIndex = 27;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // guncelleButton
             // 
@@ -58,6 +60,7 @@
             this.guncelleButton.TabIndex = 26;
             this.guncelleButton.Text = "Güncelle";
             this.guncelleButton.UseVisualStyleBackColor = false;
+            this.guncelleButton.Click += new System.EventHandler(this.guncelleButton_Click);
             // 
             // silButton
             // 
@@ -70,6 +73,7 @@
             this.silButton.TabIndex = 25;
             this.silButton.Text = "Sil";
             this.silButton.UseVisualStyleBackColor = false;
+            this.silButton.Click += new System.EventHandler(this.silButton_Click);
             // 
             // ekleButton
             // 
@@ -82,6 +86,7 @@
             this.ekleButton.TabIndex = 24;
             this.ekleButton.Text = "Ekle";
             this.ekleButton.UseVisualStyleBackColor = false;
+            this.ekleButton.Click += new System.EventHandler(this.ekleButton_Click);
             // 
             // label2
             // 
@@ -138,6 +143,7 @@
             this.Controls.Add(this.idTextbox);
             this.Name = "FormBransPaneli";
             this.Text = "BranşPaneli";
+            this.Load += new System.EventHandler(this.FormBransPaneli_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

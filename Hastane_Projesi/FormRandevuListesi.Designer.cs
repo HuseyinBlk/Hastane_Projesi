@@ -40,6 +40,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(800, 450);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             // 
             // FormRandevuListesi
             // 
@@ -49,6 +50,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "FormRandevuListesi";
             this.Text = "FormRandevuListesi";
+            this.Load += new System.EventHandler(this.FormRandevuListesi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 

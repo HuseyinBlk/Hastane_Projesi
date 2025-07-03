@@ -65,6 +65,7 @@
             this.button1.TabIndex = 40;
             this.button1.Text = "Kaydet";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label5
             // 
@@ -108,6 +109,7 @@
             // 
             // tcMaskedTextBox
             // 
+            this.tcMaskedTextBox.Enabled = false;
             this.tcMaskedTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.tcMaskedTextBox.Location = new System.Drawing.Point(146, 151);
             this.tcMaskedTextBox.Mask = "00000000000";
@@ -179,6 +181,7 @@
             this.Controls.Add(this.adTextBox);
             this.Name = "FormDoktorBilgiDuzenle";
             this.Text = "FormDoktorBilgiDuzenle";
+            this.Load += new System.EventHandler(this.FormDoktorBilgiDuzenle_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
